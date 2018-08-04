@@ -32,7 +32,7 @@ The implementation is built on the python implementation of Faster RCNN [rbgirsh
 5. To train the Domain Adaptive Faster R-CNN:
     ```Shell
     cd $FRCN_ROOT/lib
-    ./tools/train_net.py --gpu {GPU_ID} --solver models/da_faster_rcnn/solver.prototxt --weights data/imagenet_models/VGG16.v2.caffemodel --imdb voc_2007_trainval --iters  {NUM_ITER}  --cfg  {CONFIGURATION_FILE}
+    ../tools/train_net.py --gpu {GPU_ID} --solver models/da_faster_rcnn/solver.prototxt --weights data/imagenet_models/VGG16.v2.caffemodel --imdb voc_2007_trainval --iters  {NUM_ITER}  --cfg  {CONFIGURATION_FILE}
     
 ### Example
 An example of adapting from **Cityscapes** dataset to **Foggy Cityscapes** dataset is provided:
